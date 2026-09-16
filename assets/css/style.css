@@ -198,11 +198,12 @@ a {
 
 /* Ticker */
 .ticker-wrap {
-  background: var(--cream);
+  background: #fff;
   color: #000;
   overflow: hidden;
   white-space: nowrap;
   padding: .20rem 0;
+  margin-top: 0;
 }
 
 .ticker-track {

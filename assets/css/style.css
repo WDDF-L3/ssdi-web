@@ -52,9 +52,8 @@ a {
 }
 
 .btn-gold:hover {
-  background: var(--gold-dark);
-  border-color: var(--gold-dark);
-  color: #fff;
+  border-color: var(--navy);
+  color: var(--navy);
 }
 
 .btn-outline-navy {
@@ -68,12 +67,12 @@ a {
 }
 
 .btn-outline-cream {
-  border: 1.5px solid rgba(255, 255, 255, .5);
-  color: #fff;
+  border: 1.5px solid var(--navy);
+  color: #000;
 }
 
 .btn-outline-cream:hover {
-  background: #fff;
+  background: var(--gold);
   color: var(--navy);
 }
 
@@ -203,15 +202,21 @@ a {
   color: #000;
   overflow: hidden;
   white-space: nowrap;
-  padding: .25rem 0;
+  padding: .20rem 0;
 }
 
 .ticker-track {
   display: inline-block;
   padding-left: 100%;
-  animation: ticker 50s linear infinite;
+  animation: ticker 90s linear infinite;
   font-size: .88rem;
   font-weight: 500;
+}
+
+.ticker-track a {
+  color: #000;
+  padding: 0;
+  margin: 0;
 }
 
 .ticker-track i {
@@ -237,7 +242,8 @@ a {
 
 /* Hero (home) */
 .hero {
-  background: var(--navy);
+  /* background: var(--navy); */
+  background: url('../image/banner-home-f.png') no-repeat center center;
   position: relative;
   overflow: hidden;
   padding: 5.5rem 0 4.5rem;
@@ -247,14 +253,14 @@ a {
   content: "";
   position: absolute;
   width: 520px;
-  height: 520px;
+  height: 580px;
   background: radial-gradient(circle, rgba(217, 164, 65, .16) 0%, rgba(217, 164, 65, 0) 70%);
   top: -160px;
   right: -140px;
 }
 
 .hero h1 {
-  color: #fff;
+  color: var(--navy);
   font-size: 2.9rem;
   font-weight: 800;
   line-height: 1.15;
@@ -263,11 +269,11 @@ a {
 
 .hero h1 em {
   font-style: normal;
-  color: var(--gold);
+  color: var(--navy);
 }
 
 .hero p.lead-text {
-  color: #c8cfe0;
+  color: var(--navy);
   font-size: 1.08rem;
   max-width: 520px;
 }
@@ -280,13 +286,13 @@ a {
 }
 
 .hero-badges .badge-item {
-  color: #c8cfe0;
+  color: var(--navy);
   font-size: .85rem;
 }
 
 .hero-badges .badge-item strong {
   display: block;
-  color: #fff;
+  color: var(--navy);
   font-size: 1.5rem;
   font-family: 'Sora', sans-serif;
 }
@@ -399,8 +405,9 @@ a {
 
 /* Stats */
 .stats-strip {
-  background: var(--navy-2);
-  padding: 2.2rem 0;
+  /* background: var(--navy-2); */
+  background: #fff;
+  padding: 0 0 2rem 0;
 }
 
 .stat-box {
